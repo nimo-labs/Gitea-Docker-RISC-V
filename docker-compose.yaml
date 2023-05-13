@@ -1,0 +1,9 @@
+version: '3'
+services:
+    gitea:
+        image: gitea:latest
+        volumes:
+          - /home/ubuntu/data:/home/gitea/gitea/data
+          - /home/ubuntu/log:/home/gitea/gitea/log
+        ports:
+          - 3000:3000
